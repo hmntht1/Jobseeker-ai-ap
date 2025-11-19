@@ -13,7 +13,7 @@ try:
     GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 except KeyError:
     # Use dummy key for local testing if not set
-    GEMINI_API_KEY = "DUMMY_KEY_FOR_LOCAL_DEV" 
+    GEMINI_API_KEY = "AIzaSyDdOkFYez625UjfgfOSefxA4JGdmLg_PXQ" 
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 app = FastAPI()
